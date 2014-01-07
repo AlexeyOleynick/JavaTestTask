@@ -31,13 +31,11 @@ public class DefaultGameStatisticProvider implements GameStatisticProvider {
 	}
 
 	@Inject
-	@Override
 	public void setDao(ExperienceDao experienceDao) {
 		this.experienceDao = experienceDao;
 	}
 
 	@Inject
-	@Override
 	public void setCurrentTimestampProvider(TimestampProvider timestampProvider) {
 		this.timestampProvider = timestampProvider;
 	}

@@ -17,6 +17,8 @@ public class InMemoryExperienceDao implements ExperienceDao {
 
 	private Map<Integer, List<StatisticDto>> warehouse;
 
+
+
 	public InMemoryExperienceDao() {
 		this.warehouse = new HashMap<Integer, List<StatisticDto>>();
 	}

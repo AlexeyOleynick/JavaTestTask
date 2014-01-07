@@ -25,7 +25,7 @@ public class DefaultGameEventReceiverTest {
 	@Parameters(method = "provideTestData")
 	@Test
 	public void receiverShouldStoreCorrectDataToDao(List<GameEvent> events, int expectedExperience, int expectedTimestamp, int userId) {
-		GameEventReceiver gameEventReceiver = new DefaultGameEventReceiver();
+		DefaultGameEventReceiver gameEventReceiver = new DefaultGameEventReceiver();
 		ExperienceDao mockedDao = mock(ExperienceDao.class);
 		gameEventReceiver.setDao(mockedDao);
 		for (GameEvent event : events) {
@@ -43,7 +43,7 @@ public class DefaultGameEventReceiverTest {
 
 		List<GameEvent> mergedUsersData = getShuffledEventHistory(firstUserID, secondUserId);
 
-		GameEventReceiver gameEventReceiver = new DefaultGameEventReceiver();
+		DefaultGameEventReceiver gameEventReceiver = new DefaultGameEventReceiver();
 		ExperienceDao mockedDao = mock(ExperienceDao.class);
 		gameEventReceiver.setDao(mockedDao);
 

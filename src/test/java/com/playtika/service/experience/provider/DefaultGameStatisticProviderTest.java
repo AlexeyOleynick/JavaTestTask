@@ -20,7 +20,7 @@ public class DefaultGameStatisticProviderTest {
 
 	@Test
 	public void dataShouldBeFetchedFromDao() {
-		GameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
+		DefaultGameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
 		ExperienceDao mockedDao = mock(ExperienceDao.class);
 		gameStatisticProvider.setDao(mockedDao);
 
@@ -33,7 +33,7 @@ public class DefaultGameStatisticProviderTest {
 
 	@Test
 	public void dataWasFetchedFromTimestampToTimestamp() {
-		GameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
+		DefaultGameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
 		ExperienceDao mockedDao = mock(ExperienceDao.class);
 		gameStatisticProvider.setDao(mockedDao);
 
@@ -54,7 +54,7 @@ public class DefaultGameStatisticProviderTest {
 	@Test
 	public void dataWasFetchedFromTimestampToNow(){
 
-		GameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
+		DefaultGameStatisticProvider gameStatisticProvider = new DefaultGameStatisticProvider();
 
 		TimestampProvider mockedTimestampProvider = mock(TimestampProvider.class);
 		gameStatisticProvider.setCurrentTimestampProvider(mockedTimestampProvider);

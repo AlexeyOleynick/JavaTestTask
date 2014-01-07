@@ -13,11 +13,9 @@ import java.util.List;
  * Time: 11:03 PM
 */
 public interface GameStatisticProvider {
-	void setDao(ExperienceDao mockedDao);
 
 	List<StatisticDto> getStatistic(int userId, long fromTimestamp, long toTimestamp);
 
 	List<StatisticDto> getStatistic(int userId, long fromTimestamp);
 
-	void setCurrentTimestampProvider(TimestampProvider timestampProvider);
 }

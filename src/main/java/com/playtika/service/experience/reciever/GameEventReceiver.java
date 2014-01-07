@@ -11,6 +11,4 @@ import com.playtika.service.experience.event.GameEvent;
 */
 public interface GameEventReceiver {
 	void processEvent(GameEvent event);
-
-	void setDao(ExperienceDao mockedDao);
 }

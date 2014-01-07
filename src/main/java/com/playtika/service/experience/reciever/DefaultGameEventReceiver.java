@@ -41,7 +41,6 @@ public class DefaultGameEventReceiver implements GameEventReceiver {
 	}
 
 	@Inject
-	@Override
 	public void setDao(ExperienceDao experienceDao) {
 		this.experienceDao = experienceDao;
 	}
